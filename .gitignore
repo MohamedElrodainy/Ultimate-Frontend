@@ -1,0 +1,4 @@
+# ignore node modules  foldername/filename
+
+node_modules
+

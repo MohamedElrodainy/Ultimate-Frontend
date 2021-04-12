@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {}
+
+.page {
+    min-height: 100vh;
+    .content {
+        width: 70%;
+        min-height: 100%;
+        transition: 0.3s;
+        will-change: width; // this property tells the browser that the animation will take place with width.
+        float: right
+    }
+}
