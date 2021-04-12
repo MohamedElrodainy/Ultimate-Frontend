@@ -12,5 +12,41 @@
         &.no-sidebar {
             left: -250px;
         }
+        .logo-area {
+            font-weight: bold;
+            font-size: 26px;
+            margin-bottom: 30px;
+        }
+        ;
+        .links-area {
+            li {
+                a {
+                    color: #FFF;
+                    padding: 10px;
+                    display: block;
+                    position: relative;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+            >li {
+                >a {
+                    position: relative;
+                    padding-left: 20px;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        border: 2px solid #FFF;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
     }
 }
