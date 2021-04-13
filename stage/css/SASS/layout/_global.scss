@@ -1,9 +1,14 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+// the base font size of the body is 16px
 .page {
     min-height: 100vh;
     .content-area {
