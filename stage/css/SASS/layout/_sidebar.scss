@@ -22,18 +22,21 @@
             li {
                 a {
                     color: #FFF;
-                    padding: 10px;
+                    padding: 10px 20px;
                     display: block;
                     position: relative;
+                    color: #CCC;
+                    transition: 0.3s;
                     &:hover {
                         text-decoration: none;
+                        color: #FFF;
                     }
                 }
             }
             >li {
                 >a {
                     position: relative;
-                    padding-left: 20px;
+                    color: #FFF;
                     &:before {
                         content: "";
                         position: absolute;
@@ -44,6 +47,44 @@
                         border-radius: 50%;
                         border: 2px solid #FFF;
                         transform: translateY(-50%);
+                    }
+                    &:hover {
+                        padding-left: 25px;
+                    }
+                    .fa-angle-right {
+                        float: right;
+                        position: relative;
+                        top: 6px;
+                        transition: 0.3s;
+                        &.down {
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+                .child-links {
+                    position: relative;
+                    display: none;
+                    transition: all 0.3s ease-in-out;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: 3px;
+                        top: 0;
+                        width: 3px;
+                        height: 100%;
+                        background-color: #666;
+                    }
+                    a {
+                        position: relative;
+                        &:hover:before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 3px;
+                            width: 3px;
+                            height: 100%;
+                            background-color: #FFF;
+                        }
                     }
                 }
             }
