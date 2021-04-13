@@ -37,6 +37,12 @@ $(function() {
 
         $(this).find('.user-submenu').slideToggle();
     });
+
+    $('.toggle-settings').on('click', function() {
+
+        $(this).find('i').toggleClass('fa-spin');
+        $(this).parent('.setting-box').toggleClass('no-box');
+    });
 });
 
 // these are the functions of opening and closing the full screen mode

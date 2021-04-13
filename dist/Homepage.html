@@ -11,7 +11,21 @@
   </head>
   <body>
     <div class="page home-page">
-      <div class="sidebar">
+      <div class="setting-box no-box">
+        <div class="toggle-settings"><i class="fas fa-cog fa-lg"></i></div>
+        <div class="setting-content">
+          <div class="option-box">
+            <h4>Color Options</h4>
+          </div>
+          <div class="option-box">
+            <h4>Font Options</h4>
+          </div>
+          <div class="option-box">
+            <h4>Sidebar Options</h4>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar no-sidebar">
         <div class="logo-area text-center">Elrodainy</div>
         <ul class="links-area list-unstyled">
           <li><a href="#">Homepage</a></li>
@@ -31,8 +45,8 @@
           </li>
         </ul>
       </div>
-      <div class="content-area">
-        <div class="header"><i class="fa fa-exchange-alt fa-lg toggle-sidebar"></i>
+      <div class="content-area no-sidebar">
+        <div class="header"><i class="fa fa-exchange-alt fa-lg toggle-sidebar no-sidebar"></i>
           <div class="dropdown notifications-container"><i class="fa fa-bell fa-lg toggle-notifications header-icon" id="notifications" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
             <div class="dropdown-menu" aria-labelledby="notifications">
               <div class="noti-head">notifications<span>50</span></div>

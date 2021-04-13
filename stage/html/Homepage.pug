@@ -7,8 +7,9 @@ html
         include pug/layout/styles
     body
         .page.home-page
+            include pug/components/setting-box
             include pug/layout/sidebar
-            .content-area
+            .content-area.no-sidebar
                 include pug/layout/header
                 .container-fluid
                     .content
