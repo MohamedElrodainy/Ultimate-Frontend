@@ -12,4 +12,10 @@ $(function() {
 
         $(this).next('.child-links').slideToggle();
     });
+
+    $('.notifications-container').on('click', function() {
+
+        $(this).find('.dropdown-menu').slideToggle();
+
+    })
 });

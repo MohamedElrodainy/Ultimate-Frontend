@@ -1,2 +1,26 @@
 .header
     i.fa.fa-exchange-alt.fa-lg.toggle-sidebar
+    .dropdown.notifications-container
+        i.fa.fa-bell.fa-lg.toggle-notifications#notifications(data-bs-toggle='dropdown', aria-haspopup="true", aria-expanded='false')
+        .dropdown-menu(aria-labelledby='notifications')
+            .noti-head
+                | notifications
+                span 50
+            .noti-content
+                ul.list-unstyled
+                    li
+                        i.fa.fa-envelope-open-text.fa-lg
+                        | You Have Gotten Email 
+                    li
+                        i.fa.fa-money-check-alt.fa-lg
+                        | Transfer Into Your HSBC account
+                    li
+                        i.fa.fa-thumbs-up.fa-lg
+                        | Someone liked your Post
+                    li
+                        i.fa.fa-envelope-open-text.fa-lg
+                        | You Have Gotten Email
+                    li
+                        i.fa.fa-money-check-alt.fa-lg
+                        | Transfer Into Your HSBC account
+            .noti-foot.text-center: a(href='#') View All Notifications
