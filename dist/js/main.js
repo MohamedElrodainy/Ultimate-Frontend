@@ -31,9 +31,15 @@ $(function() {
         } else {
             closeFullScreen();
         }
-    })
+    });
+
+    $('.user-menu-container').on('click', function() {
+
+        $(this).find('.user-submenu').slideToggle();
+    });
 });
 
+// these are the functions of opening and closing the full screen mode
 
 
 var element = document.documentElement;

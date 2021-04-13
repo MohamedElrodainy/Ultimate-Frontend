@@ -24,7 +24,7 @@
                 content: "";
                 position: absolute;
                 top: -20px;
-                left: 10px;
+                left: 20px;
                 border-width: 10px;
                 border-style: solid;
                 border-color: transparent transparent #333 transparent;
@@ -68,6 +68,74 @@
                     }
                     &:focus {
                         outline: none;
+                    }
+                }
+            }
+        }
+    }
+    .user-menu-container {
+        float: right;
+        .username {
+            cursor: pointer;
+            .avatar {
+                width: 40px;
+                height: 40px;
+            }
+            .user {
+                font-weight: bold;
+                color: #777;
+                margin: 0 10px;
+            }
+        }
+        .user-submenu {
+            min-width: 600px;
+            border: none;
+            padding: 20px;
+            top: 40px;
+            border: 1px solid #DDD;
+            &:before {
+                content: "";
+                position: absolute;
+                top: -20px;
+                right: 50px;
+                border-width: 10px;
+                border-style: solid;
+                border-color: transparent transparent #DDD transparent;
+            }
+            .user-info {
+                h3 {
+                    font-weight: bold;
+                    color: $flatBlue;
+                }
+                p {
+                    color: $flatBlueAlt;
+                }
+            }
+            .activities-list {
+                li {
+                    padding: 10px;
+                }
+            }
+            .usermenu-links {
+                .link-box {
+                    border: 1px solid #DDD;
+                    padding: 10px 15px;
+                    border-radius: 6px;
+                    text-align: right;
+                    cursor: pointer;
+                    i {
+                        float: left;
+                        position: relative;
+                        top: 5px;
+                        &.fa-cog {
+                            color: $flatBlue;
+                        }
+                        &.fa-user {
+                            color: $flatGreen;
+                        }
+                        &.fa-sign-out-alt {
+                            color: $flatRed;
+                        }
                     }
                 }
             }
