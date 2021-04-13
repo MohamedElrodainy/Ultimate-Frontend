@@ -4,16 +4,17 @@
     .toggle-sidebar {
         cursor: pointer;
     }
+    .header-icon {
+        background-color: #F9F9F9;
+        padding: 10px;
+        border-radius: 50%;
+        color: #555;
+        cursor: pointer;
+        margin-left: 10px;
+    }
     .notifications-container {
         display: inline-block;
         margin-left: 20px;
-        .toggle-notifications {
-            background-color: #F9F9F9;
-            padding: 10px;
-            border-radius: 50%;
-            color: #555;
-            cursor: pointer;
-        }
         .dropdown-menu {
             min-width: 600px;
             border: none;

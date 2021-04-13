@@ -17,5 +17,47 @@ $(function() {
 
         $(this).find('.dropdown-menu').slideToggle();
 
+    });
+
+    // open & close the full screen mode
+
+    $('.toggle-fullscreen').on('click', function() {
+
+        $(this).toggleClass('fullscreen');
+
+        if ($(this).hasClass('fullscreen')) {
+
+            openFullScreen();
+        } else {
+            closeFullScreen();
+        }
     })
 });
+
+
+
+var element = document.documentElement;
+
+function openFullScreen() {
+    if (element.requestFullScreen) {
+        element.requestFullScreen()
+    } else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullScreen) {
+        element.webkitRequestFullScreen();
+    } else if (element.msRequestFullScreen) {
+        element.msRequestFullScreen();
+    }
+}
+
+function closeFullScreen() {
+    if (document.exitFullscreen) {
+        document.exitFullscreen()
+    } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+    }
+}

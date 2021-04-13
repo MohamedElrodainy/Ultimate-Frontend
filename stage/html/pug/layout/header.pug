@@ -1,7 +1,7 @@
 .header
     i.fa.fa-exchange-alt.fa-lg.toggle-sidebar
     .dropdown.notifications-container
-        i.fa.fa-bell.fa-lg.toggle-notifications#notifications(data-bs-toggle='dropdown', aria-haspopup="true", aria-expanded='false')
+        i.fa.fa-bell.fa-lg.toggle-notifications.header-icon#notifications(data-bs-toggle='dropdown', aria-haspopup="true", aria-expanded='false')
         .dropdown-menu(aria-labelledby='notifications')
             .noti-head
                 | notifications
@@ -24,3 +24,4 @@
                         i.fa.fa-money-check-alt.fa-lg
                         | Transfer Into Your HSBC account
             .noti-foot.text-center: a(href='#') View All Notifications
+    i.fas.fa-expand-alt.fa-lg.toggle-fullscreen.header-icon
