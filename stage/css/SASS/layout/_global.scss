@@ -6,6 +6,18 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    &.open {
+        font-family: 'Open Sans', sans-serif;
+    }
+    &.antonio {
+        font-family: 'Antonio', sans-serif;
+    }
+    &.orelega {
+        font-family: 'Orelega One', cursive;
+    }
+    &.roboto {
+        font-family: 'Roboto Mono', monospace;
+    }
 }
 
 // the base font size of the body is 16px
