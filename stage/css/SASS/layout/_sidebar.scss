@@ -48,6 +48,11 @@
                         border: 2px solid #FFF;
                         transform: translateY(-50%);
                     }
+                    &.active {
+                        &:before {
+                            border-color: $flatGreen;
+                        }
+                    }
                     &:hover {
                         padding-left: 25px;
                     }

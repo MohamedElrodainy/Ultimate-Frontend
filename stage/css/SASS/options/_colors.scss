@@ -8,5 +8,8 @@ $map in $themes {
         .header .toggle-sidebar:hover {
             color: $color;
         }
+        .page .sidebar .links-area>li>a.active:before {
+            border-color: $color;
+        }
     }
 }
