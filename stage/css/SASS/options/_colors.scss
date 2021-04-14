@@ -1,9 +1,12 @@
-$themes: ( green-theme: ( color: $flatGreen), blue-theme: ( color: $flatBlue), red-theme: ( color: $flatRed));
+$themes: ( green-theme: ( color: $flatGreen), blue-theme: ( color: $flatBlue), red-theme: ( color: $flatRed), purple-theme: (color: #8e44ad));
 @each $theme,
 $map in $themes {
     .#{$theme} {
-        .page-head .page-title {
-            color: map-get($map, color) !important;
+        $color: map-get($map, color) !important;
+        .page-head .page-title,
+        .header .user-menu-container .user-submenu .user-info h3,
+        .header .toggle-sidebar:hover {
+            color: $color;
         }
     }
 }
