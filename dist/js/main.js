@@ -43,6 +43,22 @@ $(function() {
         $(this).find('i').toggleClass('fa-spin');
         $(this).parent('.setting-box').toggleClass('no-box');
     });
+
+    // switch color theme
+
+    var themeClasses = [];
+
+    $('.color-options li').each(function() {
+
+        themeClasses.push($(this).data('theme'));
+    });
+
+    $('.color-options li').on('click', function() {
+
+        $(this).addClass('active').siblings().removeClass('active');
+
+        $('body').removeClass(themeClasses.join(' ')).addClass($(this).data('theme'));
+    });
 });
 
 // these are the functions of opening and closing the full screen mode

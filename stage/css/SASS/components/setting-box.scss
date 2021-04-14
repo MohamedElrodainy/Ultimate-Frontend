@@ -21,4 +21,30 @@
     &.no-box {
         right: -250px;
     }
+    .option-title {
+        font-weight: bold;
+        color: #777;
+        margin: 10px 0 15px;
+    }
+    .color-options {
+        ul {
+            $colors: $flatGreen, $flatBlue, $flatRed;
+            @for $i from 1 through length($colors) {
+                li:nth-child(#{$i}) {
+                    background-color: nth($colors, $i); // this will pick from the object 
+                }
+            }
+        }
+        li {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            opacity: 0.7;
+            cursor: pointer;
+            display: inline-block;
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
 }

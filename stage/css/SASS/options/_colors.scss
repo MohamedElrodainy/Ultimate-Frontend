@@ -2,8 +2,8 @@ $themes: ( green-theme: ( color: $flatGreen), blue-theme: ( color: $flatBlue), r
 @each $theme,
 $map in $themes {
     .#{$theme} {
-        .classname {
-            color: map-get($map, color);
+        .page-head .page-title {
+            color: map-get($map, color) !important;
         }
     }
 }
